@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RIFU GAME SHOP</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #171717;
+    }
+
+    /* Header */
+    header {
+      background: #111827;
+      color: white;
+      padding: 15px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .login-btn {
+      background: #2563eb;
+      color: white;
+      padding: 9px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 45px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #111827, #2563eb);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #dbeafe;
+      margin-bottom: 22px;
+    }
+
+    .shop-btn {
+      display: inline-block;
+      background: white;
+      color: #1d4ed8;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 18px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+
+    /* Games */
+    .games {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .game-card {
+      background: white;
+      border-radius: 12px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 3px 15px rgba(0,0,0,.08);
+    }
+
+    .game-icon {
+      width: 70px;
+      height: 70px;
+      margin: auto;
+      margin-bottom: 12px;
+      border-radius: 15px;
+      background: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+    }
+
+    .game-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .topup-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #2563eb;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .feature {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px rgba(0,0,0,.06);
+    }
+
+    .feature-icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .feature h3 {
+      margin-bottom: 7px;
+    }
+
+    .feature p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 30px;
+      padding: 25px;
+      background: #111827;
+      color: white;
+      text-align: center;
+    }
+
+    footer p {
+      color: #cbd5e1;
+      font-size: 14px;
+      margin-top: 7px;
+    }
+
+    /* Mobile */
+    @media (max-width: 650px) {
+
+      .hero h1 {
+        font-size: 27px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .games {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🎮 RIFU GAME SHOP</div>
+
+    <a href="#" class="login-btn">
+      Login
+    </a>
+  </header>
+
+
+  <!-- Hero -->
+  <section class="hero">
+
+    <h1>Game Top-Up Shop</h1>
+
+    <p>
+      আপনার পছন্দের গেমের Top-Up সহজেই করুন
+    </p>
+
+    <a href="#games" class="shop-btn">
+      🛒 Shop Now
+    </a>
+
+  </section>
+
+
+  <!-- Games -->
+  <section class="container" id="games">
+
+    <h2 class="section-title">
+      🎮 Popular Games
+    </h2>
+
+    <div class="games">
+
+      <div class="game-card">
+
+        <div class="game-icon">
+          🔥
+        </div>
+
+        <h3>Free Fire</h3>
+
+        <p>Diamond Top-Up</p>
+
+        <a href="#" class="topup-btn">
+          Top-Up Now
+        </a>
+
+      </div>
+
+
+      <div class="game-card">
+
+        <div class="game-icon">
+          🎯
+        </div>
+
+        <h3>Free Fire MAX</h3>
+
+        <p>Diamond Top-Up</p>
+
+        <a href="#" class="topup-btn">
+          Top-Up Now
+        </a>
+
+      </div>
+
+
+      <div class="game-card">
+
+        <div class="game-icon">
+          ⚔️
+        </div>
+
+        <h3>Mobile Legends</h3>
+
+        <p>Diamond Top-Up</p>
+
+        <a href="#" class="topup-btn">
+          Top-Up Now
+        </a>
+
+      </div>
+
+
+      <div class="game-card">
+
+        <div class="game-icon">
+          🔫
+        </div>
+
+        <h3>PUBG Mobile</h3>
+
+        <p>UC Top-Up</p>
+
+        <a href="#" class="topup-btn">
+          Top-Up Now
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+  <section class="container">
+
+    <h2 class="section-title">
+      কেন আমাদের থেকে কিনবেন?
+    </h2>
+
+    <div class="features">
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          ⚡
+        </div>
+
+        <h3>Fast Delivery</h3>
+
+        <p>
+          দ্রুত অর্ডার প্রসেস করার ব্যবস্থা।
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          🔒
+        </div>
+
+        <h3>Secure Payment</h3>
+
+        <p>
+          নিরাপদ পেমেন্ট ও অর্ডার সিস্টেম।
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          💬
+        </div>
+
+        <h3>24/7 Support</h3>
+
+        <p>
+          যেকোনো সমস্যায় Support Team-এর সাথে যোগাযোগ করুন।
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+
+    <strong>RIFU GAME SHOP</strong>
+
+    <p>
+      © 2026 RIFU GAME SHOP. All Rights Reserved.
+    </p>
+
+  </footer>
+
+</body>
+</html>
